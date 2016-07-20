@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.fivefunctions.MainActivity">
+
+  <ImageButton
+      android:id="@+id/exo_image_button"
+      android:src="@drawable/exo"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@android:color/black"
+      android:scaleType="fitCenter"
+      android:onClick="exoscript"
+      />
+    <ImageButton
+        android:id="@+id/bigbang_image_button"
+        android:src="@drawable/bigbang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:scaleType="fitCenter"
+        android:onClick="bigbangscript"
+
+        />
+    <ImageButton
+        android:id="@+id/twice_image_button"
+        android:src="@drawable/twice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#41d9cd"
+        android:scaleType="fitCenter"
+        android:onClick="twicescript"
+        />
+    <ImageButton
+        android:id="@+id/bangtan_image_button"
+        android:src="@drawable/bangtan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#272121"
+        android:scaleType="fitCenter"
+        android:onClick="bangtanscript"
+        />
+</LinearLayout>
