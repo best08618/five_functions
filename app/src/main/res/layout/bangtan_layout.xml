@@ -6,7 +6,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="24dp">
+        android:paddingTop="8dp">
 
         <ImageView
             android:layout_width="160dp"
@@ -23,8 +23,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:text="Bangtan Boys" />
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="#303F9F"
+                android:text="Bangtan Boys"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,6 +60,8 @@
                 android:layout_height="30dp"
                 android:onClick="profile_link"
                 android:text="more"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
                 android:textSize="10sp" />
         </LinearLayout>
 
@@ -63,7 +70,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp"
+        android:layout_margin="8dp"
+        android:background="#303F9F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:text="Songs" />
 
     <LinearLayout
@@ -76,7 +87,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="Fire_youtube"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/fire" />
 
         <ImageButton
@@ -84,7 +96,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="I_need_you_youtube"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/i_need_you" />
 
         <ImageButton
@@ -92,7 +105,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="Danger_youtube"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/danger" />
 
     </LinearLayout>
@@ -100,34 +114,42 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp"
+        android:layout_margin="8dp"
+        android:background="#303F9F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:id="@+id/imgholder"
         android:text="Images" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/bangtan1" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/bangtan2" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/bangtan3" />
 
     </LinearLayout>
@@ -137,6 +159,7 @@
         android:layout_height="wrap_content"
         android:onClick="back"
         android:layout_below="@id/imgholder"
+        android:background="@android:color/white"
         android:text="back" />
 
 </LinearLayout>

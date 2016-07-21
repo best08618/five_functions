@@ -8,13 +8,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="24dp">
+        android:paddingTop="8dp">
 
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_margin="8dp"
-            android:scaleType="fitStart"
+            android:scaleType="fitCenter"
             android:src="@drawable/exo_profile" />
 
         <LinearLayout
@@ -25,7 +25,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="8dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="#212121"
                 android:text="EXO" />
 
             <TextView
@@ -54,8 +58,9 @@
 
             <Button
                 android:layout_width="70dp"
-                android:layout_height="30dp"
+                android:layout_height="25dp"
                 android:onClick="profile_link"
+                android:background="@android:color/white"
                 android:text="more"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -65,7 +70,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp"
+        android:layout_margin="8dp"
+        android:background="#212121"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:text="Songs" />
 
     <LinearLayout
@@ -78,7 +87,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="growl_youtube"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/growl" />
 
         <ImageButton
@@ -86,7 +96,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="Call_me_baby_youtube"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/callmebaby" />
 
         <ImageButton
@@ -94,7 +105,8 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="Monster_youtube"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/monster" />
 
     </LinearLayout>
@@ -102,42 +114,51 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp"
+        android:layout_margin="8dp"
+        android:background="#212121"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
         android:id="@+id/imgholder"
         android:text="Images" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/exo1" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/exo3" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
+            android:scaleType="fitXY"
+            android:background="#00BCD4"
             android:src="@drawable/exo2" />
 
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:onClick="back"
+        android:background="@android:color/white"
         android:layout_below="@id/imgholder"
         android:text="back" />
 

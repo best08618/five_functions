@@ -7,7 +7,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="24dp">
+            android:paddingTop="8dp">
 
             <ImageView
                 android:layout_width="160dp"
@@ -24,7 +24,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:background="#F44336"
                     android:text="BIGBANG" />
 
                 <TextView
@@ -54,7 +58,9 @@
                 <Button
                     android:layout_width="70dp"
                     android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
                     android:onClick="profile_link"
+                    android:background="@android:color/white"
                     android:text="more"
                     android:textSize="10sp" />
             </LinearLayout>
@@ -64,7 +70,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
+           android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#F44336"
+            android:textColor="@android:color/white"
             android:text="Songs" />
 
         <LinearLayout
@@ -77,7 +87,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:onClick="bangbangbang_youtube"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
+                android:background="#00BCD4"
                 android:src="@drawable/bangbangbang" />
 
             <ImageButton
@@ -85,7 +96,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:onClick="fantastic_youtube"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
+                android:background="#00BCD4"
                 android:src="@drawable/fantastic" />
 
             <ImageButton
@@ -93,7 +105,8 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:onClick="loser_youtube"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
+                android:background="#00BCD4"
                 android:src="@drawable/loser" />
 
         </LinearLayout>
@@ -101,43 +114,50 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#F44336"
+            android:textColor="@android:color/white"
             android:text="Images" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imgholder"
+            android:background="#795548"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:src="@drawable/bigbang1" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:src="@drawable/bigbang2" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:src="@drawable/bigbang3" />
 
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
             android:layout_below="@id/imgholder"
             android:onClick="back"
+            android:background="@android:color/white"
+            android:layout_marginTop="16dp"
             android:text="back" />
 
     </LinearLayout>

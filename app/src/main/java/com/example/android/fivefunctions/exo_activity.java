@@ -26,6 +26,13 @@ public class exo_activity extends AppCompatActivity {
         i.setData(Uri.parse(url));
         startActivity(i);
     }
+    public void growl_youtube(View v)
+    {
+        String url = "https://youtu.be/I3dezFzsNss";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
     public void Call_me_baby_youtube(View v)
     {
         String url = "https://youtu.be/yWfsla_Uh80";
@@ -35,14 +42,7 @@ public class exo_activity extends AppCompatActivity {
     }
     public void Monster_youtube(View v)
     {
-        String url = "https://youtu.be/KSH-FVVtTf0";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
-    }
-    public void growl_youtube(View v)
-    {
-        String url = "https://youtu.be/KSH-FVVtTf0";
+        String url = "https://youtu.be/mcq_bAxwD4s";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
@@ -50,7 +50,7 @@ public class exo_activity extends AppCompatActivity {
 
     public void back(View v)
     {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
