@@ -25,7 +25,7 @@ public class twice_activity extends AppCompatActivity {
         i.setData(Uri.parse(url));
         startActivity(i);
     }
-    public void cheerup_youtubee(View v)
+    public void cheerup_youtube(View v)
     {
         String url = "https://youtu.be/c7rCyll5AeY";
         Intent i = new Intent(Intent.ACTION_VIEW);
